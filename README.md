@@ -14,7 +14,7 @@ sea-level-predictor/
 │   └── epa-sea-level.csv
 │
 ├── output/
-│   └── sea_level_plot.png
+│   └── sea_level_detector.png
 │
 ├── sea_level_predictor.py
 ├── main.py
