@@ -63,8 +63,7 @@ The script generates a scatter plot with two regression lines saved as `sea_leve
 
 Example chart:
 
-![Sea Level Plot](output/sea level detector.png)
-
+output/sea level detector.png
 ---
 
 ## 🧠 Key Features
