@@ -1,2 +1,107 @@
-# Sea-Level-Detector
-It analyzes historical global sea level data (1880–2014) to identify trends and predict future rise up to 2050. Used data analysis and visualization techniques to build regression models and compare long-term vs recent trends.
+# 🌊 Sea Level Rise Predictor
+
+## 📌 Overview
+This project analyzes the **EPA's Global Average Absolute Sea Level Change** dataset (1880–2014) to visualize historical trends and forecast ocean rise through **2050**.  
+Two linear regression models are built — one on the full dataset and one on post-2000 data — to compare historical and accelerating modern rates of sea level rise.
+
+---
+
+## 📂 Project Structure
+```
+sea-level-predictor/
+│
+├── data/
+│   └── epa-sea-level.csv
+│
+├── output/
+│   └── sea_level_plot.png
+│
+├── sea_level_predictor.py
+├── main.py
+├── test_module.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
+
+---
+
+## ⚙️ Technologies Used
+- Python
+- Pandas
+- Matplotlib
+- SciPy
+
+---
+
+## 🚀 How to Run
+
+### 1. Clone the Repository
+```
+git clone https://github.com/your-username/sea-level-predictor.git
+cd sea-level-predictor
+```
+
+### 2. Install Dependencies
+```
+pip install -r requirements.txt
+```
+
+### 3. Run the Project
+```
+python main.py
+```
+
+---
+
+## 📊 Output
+
+The script generates a scatter plot with two regression lines saved as `sea_level_plot.png`:
+
+- 🔴 **Red line** — Best fit over full dataset (1880–2050)
+- 🟢 **Green line** — Best fit using only post-2000 data (2000–2050)
+
+Example chart:
+
+![Sea Level Plot](output/sea_level_plot.png)
+
+---
+
+## 🧠 Key Features
+- CSV data loading and processing with Pandas
+- Scatter plot visualization of sea level change since 1880
+- Full-range linear regression (1880 → 2050) using SciPy `linregress`
+- Recent-trend regression (2000 → 2050) to model accelerated rise
+- Exported chart as PNG using Matplotlib
+
+---
+
+## ⚠️ Dataset Info
+- **Source:** US Environmental Protection Agency (CSIRO, 2015 / NOAA, 2015)
+- **Years Covered:** 1880–2014
+- **Key Column:** `CSIRO Adjusted Sea Level` (inches)
+- **Target Year:** 2050 (predicted)
+
+---
+
+## 📈 Future Improvements
+- Add polynomial regression for non-linear trend modeling
+- Incorporate confidence intervals around predictions
+- Support multiple sea level datasets (NOAA, satellite data)
+- Build an interactive dashboard using Plotly or Streamlit
+- Deploy as a web app with real-time data updates
+
+---
+
+## 🔗 Project Resources
+### Dataset (data/epa-sea-level.csv) — [Click to Download](https://datahub.io/core/sea-level-rise)
+
+This project is part of the **freeCodeCamp Data Analysis with Python** certification.  
+[View Certification](https://www.freecodecamp.org/certification/your-username/data-analysis-with-python-v7)
+
+---
+
+## 👨‍💻 Author
+**Lakshya Prasad**  
+B.Tech CSE (AI)  
+Data Analytics | Machine Learning
