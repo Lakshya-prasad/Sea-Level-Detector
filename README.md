@@ -14,7 +14,7 @@ sea-level-predictor/
 │   └── epa-sea-level.csv
 │
 ├── output/
-│   └── sea_level_detector.png
+│   └── sea_level_plot.png
 │
 ├── sea_level_predictor.py
 ├── main.py
@@ -56,14 +56,18 @@ python main.py
 
 ## 📊 Output
 
-The script generates a scatter plot with two regression lines saved as `sea_level_plot.png`:
+The script generates a scatter plot with two regression lines saved as `sea level detector.png`:
 
-- 🔴 **Red line** — Best fit over full dataset (1880–2050)
-- 🟢 **Green line** — Best fit using only post-2000 data (2000–2050)
+| Element | Description |
+|---|---|
+| 🔵 Blue dots | Observed sea level data (1880–2014) |
+| 🔴 Red line | Linear regression over full dataset — predicts **~10.1 inches** rise by 2050 |
+| 🟢 Green line | Regression from 2000 onwards — predicts **~15.3 inches** rise by 2050 |
 
-Example chart:
+> The steeper green line highlights the **accelerating rate** of sea level rise since 2000 compared to the historical average.
 
-output/sea%20level%20detector.png
+![Sea Level Plot](output/sea%20level%20detector.png)
+
 ---
 
 ## 🧠 Key Features
