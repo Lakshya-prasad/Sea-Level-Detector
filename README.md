@@ -66,7 +66,7 @@ The script generates a scatter plot with two regression lines saved as `sea leve
 
 > The steeper green line highlights the **accelerating rate** of sea level rise since 2000 compared to the historical average.
 
- Example
+ Example:-
  
 ![Sea Level Plot](output/sea%20level%20detector.png)
 
